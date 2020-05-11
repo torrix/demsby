@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     preserveAspectRatio="xMidYMid meet" viewBox="0 0 793.701 548.031" width="793.7" height="548.03">
+    <defs>
+        <path d="M0 0L793.7 0L793.7 548.03L0 548.03L0 0Z" id="d4mIJqOU4A"/>
+        <path d="M558.07 402.46L434.06 402.46" id="aVmS6oNBV"/>
+        <path d="M781.3 342.52L12.4 342.52" id="g3UjG9rgm"/>
+        <path d="M782.81 256.89C572.15 256.89 418.39 256.89 321.51 256.89C224.64 256.89 121.1 256.89 10.89 256.89"
+              id="f9YUfNvnp"/>
+        <path d="M558.07 196.95L540.05 196.95L434.06 196.95" id="c54dbx8Mcq"/>
+        <text id="bntIV3DV" x="56.25" y="25" font-size="38" font-family="BritishRailDarkNormal"
+              transform="matrix(1 0 0 1 42.962625 -3.2480625000000174)" style="line-height:100%" xml:space="preserve"
+              dominant-baseline="text-before-edge"><tspan x="56.25" dy="0em" alignment-baseline="before-edge" dominant-baseline="text-before-edge" text-anchor="start">Demsby</tspan></text>
+        <path d="M353.75 256.89L436.71 196.95" id="bLMADbk5O"/>
+        <path d="M351.9 344.62L437.26 402.46" id="g6rx5YTqW"/>
+        <path d="M558.07 404.15L636.35 342.52" id="cXNuhrXxV"/>
+        <path d="M555.8 196.95L636.35 256.89" id="hTux8yDhW"/>
+        <path d="M632.48 85.63L434.06 85.63L310.04 171.26L12.4 171.26" id="a9inHdkjM"/>
+        <path d="M310.04 256.89L186.02 174.82" id="abtL6wIonG"/>
+        <path d="M186.02 256.89L310.04 171.26" id="b1lhPAK6kM"/>
+        <path d="M62.01 342.52L124.02 256.89" id="c23VxpiB3o"/>
+        <path d="M72.28 428.15C72.28 434.41 67.2 439.49 60.94 439.49C54.69 439.49 49.61 434.41 49.61 428.15C49.61 421.89 54.69 416.81 60.94 416.81C67.2 416.81 72.28 421.89 72.28 428.15Z" id="a1F0AvTX6j"/>
+        <path d="M631.42 430.92C631.42 437.18 626.34 442.26 620.08 442.26C613.82 442.26 608.74 437.18 608.74 430.92C608.74 424.67 613.82 419.59 620.08 419.59C626.34 419.59 631.42 424.67 631.42 430.92Z" id="c1bWuFsII9"/>
+        <path d="M446.46 430.92C446.46 437.18 441.38 442.26 435.12 442.26C428.86 442.26 423.78 437.18 423.78 430.92C423.78 424.67 428.86 419.59 435.12 419.59C441.38 419.59 446.46 424.67 446.46 430.92Z" id="a6aC0u7Qj0"/>
+        <path d="M259.37 430.92C259.37 437.18 254.29 442.26 248.03 442.26C241.77 442.26 236.69 437.18 236.69 430.92C236.69 424.67 241.77 419.59 248.03 419.59C254.29 419.59 259.37 424.67 259.37 430.92Z" id="d2StHZKB94"/>
+        <path d="M73.35 511C73.35 517.26 68.27 522.34 62.01 522.34C55.75 522.34 50.67 517.26 50.67 511C50.67 504.75 55.75 499.67 62.01 499.67C68.27 499.67 73.35 504.75 73.35 511Z" id="b3xzTmm50H"/>
+        <path d="M259.37 513.78C259.37 520.04 254.29 525.12 248.03 525.12C241.77 525.12 236.69 520.04 236.69 513.78C236.69 507.52 241.77 502.44 248.03 502.44C254.29 502.44 259.37 507.52 259.37 513.78Z" id="h3tEtiRUK"/>
+        <path d="M445.39 513.78C445.39 520.04 440.31 525.12 434.06 525.12C427.8 525.12 422.72 520.04 422.72 513.78C422.72 507.52 427.8 502.44 434.06 502.44C440.31 502.44 445.39 507.52 445.39 513.78Z" id="a6327RKo7x"/>
+        <path d="M631.42 513.78C631.42 520.04 626.34 525.12 620.08 525.12C613.82 525.12 608.74 520.04 608.74 513.78C608.74 507.52 613.82 502.44 620.08 502.44C626.34 502.44 631.42 507.52 631.42 513.78Z" id="fIysU4xq4"/>
+        <path d="M87.53 12C87.53 12 87.53 12 87.53 12C87.53 40.76 87.53 56.74 87.53 59.94C87.53 59.94 87.53 59.94 87.53 59.94C41.5 59.94 15.93 59.94 10.82 59.94C10.82 59.94 10.82 59.94 10.82 59.94C10.82 31.18 10.82 15.2 10.82 12C10.82 12 10.82 12 10.82 12C56.84 12 82.41 12 87.53 12Z" id="cA06uvD0K"/>
+        <path d="M76.57 28.62L76.57 33.39L62.61 33.39L48.99 40.2L76.57 40.2L76.57 44.97L48.99 44.97L67.04 52.46L54.78 52.46L38.77 44.97L24.8 44.97L24.8 40.2L38.77 40.2L52.39 33.39L24.8 33.39L24.8 28.62L52.39 28.62L34.34 21.13L46.6 21.13L62.61 28.62L76.57 28.62Z" id="e7Ydyd8Xrg"/>
+        <text id="a1tN36dnO7" x="86.81" y="428.15" font-size="20" font-family="BritishRailLightNormal" font-weight="normal"
+              font-style="normal" letter-spacing="0" alignment-baseline="before-edge" transform="matrix(1 0 0 1 0 -13)"
+              style="line-height:100%" xml:space="preserve" dominant-baseline="text-before-edge"><tspan x="86.81" dy="0em" alignment-baseline="before-edge" dominant-baseline="text-before-edge" text-anchor="start">Route One</tspan></text>
+    </defs>
+    <g>
+        <g>
+            <g>
+                <use xlink:href="#d4mIJqOU4A" opacity="1" fill="#f5f5f5" fill-opacity="1"/>
+                <g>
+                    <use xlink:href="#d4mIJqOU4A" opacity="1" fill-opacity="0" stroke="#06e1d2" stroke-width="0"
+                         stroke-opacity="1"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <use xlink:href="#aVmS6oNBV" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="11.34"
+                         stroke-opacity="1"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <use xlink:href="#g3UjG9rgm" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="11.34"
+                         stroke-opacity="1"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <use xlink:href="#f9YUfNvnp" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="11.34"
+                         stroke-opacity="1"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <use xlink:href="#c54dbx8Mcq" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="11.34"
+                         stroke-opacity="1"/>
+                </g>
+            </g>
+            <g id="bBRsrOSNu">
+                <use xlink:href="#bntIV3DV" opacity="1" fill="#000000" fill-opacity="1"/>
+            </g>
+            <g>
+                <use xlink:href="#bLMADbk5O" opacity="1" fill="#000000" fill-opacity="1"/>
+                <use xlink:href="#bLMADbk5O" opacity="1" fill="#000000" fill-opacity="1"/>
+                <g>
+                    <use xlink:href="#bLMADbk5O" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="11.34"
+                         stroke-opacity="1"/>
+                </g>
+            </g>
+            <g>
+                <use xlink:href="#g6rx5YTqW" opacity="1" fill="#000000" fill-opacity="1"/>
+                <use xlink:href="#g6rx5YTqW" opacity="1" fill="#000000" fill-opacity="1"/>
+                <g>
+                    <use xlink:href="#g6rx5YTqW" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="11.34"
+                         stroke-opacity="1"/>
+                </g>
+            </g>
+            <g>
+                <use xlink:href="#cXNuhrXxV" opacity="1" fill="#000000" fill-opacity="1"/>
+                <use xlink:href="#cXNuhrXxV" opacity="1" fill="#000000" fill-opacity="1"/>
+                <g>
+                    <use xlink:href="#cXNuhrXxV" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="11.34"
+                         stroke-opacity="1"/>
+                </g>
+            </g>
+            <g>
+                <use xlink:href="#hTux8yDhW" opacity="1" fill="#000000" fill-opacity="1"/>
+                <use xlink:href="#hTux8yDhW" opacity="1" fill="#000000" fill-opacity="1"/>
+                <g>
+                    <use xlink:href="#hTux8yDhW" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="11.34"
+                         stroke-opacity="1"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <use xlink:href="#a9inHdkjM" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="11.34"
+                         stroke-opacity="1"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <use xlink:href="#abtL6wIonG" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="11.34"
+                         stroke-opacity="1"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <use xlink:href="#b1lhPAK6kM" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="11.34"
+                         stroke-opacity="1"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <use xlink:href="#c23VxpiB3o" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="11.34"
+                         stroke-opacity="1"/>
+                </g>
+            </g>
+            <g><use xlink:href="#a1F0AvTX6j" opacity="1" fill="#ff0000" fill-opacity="1"/></g>
+            <g><use xlink:href="#c1bWuFsII9" opacity="1" fill="#ff0000" fill-opacity="1"/></g>
+            <g><use xlink:href="#a6aC0u7Qj0" opacity="1" fill="#ff0000" fill-opacity="1"/></g>
+            <g><use xlink:href="#d2StHZKB94" opacity="1" fill="#ff0000" fill-opacity="1"/></g>
+            <g><use xlink:href="#b3xzTmm50H" opacity="1" fill="#ff0000" fill-opacity="1"/></g>
+            <g><use xlink:href="#h3tEtiRUK" opacity="1" fill="#ff0000" fill-opacity="1"/></g>
+            <g><use xlink:href="#a6327RKo7x" opacity="1" fill="#ff0000" fill-opacity="1"/></g>
+            <g><use xlink:href="#fIysU4xq4" opacity="1" fill="#ff0000" fill-opacity="1"/></g>
+            <g>
+                <use xlink:href="#cA06uvD0K" opacity="1" fill="#de433e" fill-opacity="1"/>
+                <g>
+                    <use xlink:href="#cA06uvD0K" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="0.26"
+                         stroke-opacity="0"/>
+                </g>
+            </g>
+            <g>
+                <use xlink:href="#e7Ydyd8Xrg" opacity="1" fill="#ffffff" fill-opacity="1"/>
+                <g>
+                    <use xlink:href="#e7Ydyd8Xrg" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="0.26"
+                         stroke-opacity="0"/>
+                </g>
+            </g>
+            <g id="c1R7QI5UCe">
+                <use xlink:href="#a1tN36dnO7" opacity="1" fill="#000000" fill-opacity="1"/>
+            </g>
+        </g>
+    </g>
+</svg>
