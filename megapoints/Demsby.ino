@@ -2,6 +2,7 @@
 
 #include <Bounce2.h>
 
+const long interval = 1000;
 const int channels = 12;
 const int bounceLength = 100;
 const byte servoControllerAddress = 2;
@@ -21,9 +22,9 @@ const int button[] = {
     13 // 11
 };
 
-const int point[] = {
+const int led[] = {
     22, // 0
-    24, // 1
+//    24, // 1
     26, // 2
     28, // 3
     30, // 4
@@ -33,7 +34,8 @@ const int point[] = {
     38, // 8
     40, // 9
     42, // 10
-    44  // 11
+    44, // 11
+    46 // 11
 };
 
 bool state[] = {
@@ -53,34 +55,55 @@ bool state[] = {
 
 Bounce bounce[channels];
 
+unsigned long previousMillis = 0;
+
 void setup() {
     Wire.begin();
     Serial.begin(9600);
-    Serial.println("RESTARTING");
+    //    Serial.println("RESTARTING");
     sendToMegapoints();
     outputState();
 
     for (int i = 0; i < channels; i++) {
         bounce[i] = Bounce(button[i], bounceLength);
         pinMode(button[i], INPUT_PULLUP);
-        pinMode(point[i], OUTPUT);
-        pinMode(point[i] + 1, OUTPUT);
-        digitalWrite(point[i], state[i]);
-        digitalWrite(point[i] + 1, !state[i]);
+        pinMode(led[i], OUTPUT);
+        pinMode(led[i] + 1, OUTPUT);
+        digitalWrite(led[i], !state[i]);
+        digitalWrite(led[i] + 1, state[i]);
     }
 }
 
 void loop() {
+    unsigned long currentMillis = millis();
+
+    // Handle physical button press
     for (int i = 0; i < channels; i++) {
         bounce[i].update();
         if (bounce[i].fell()) {
-            state[i] = !state[i];
-            digitalWrite(point[i] + 1, state[i]);
-            digitalWrite(point[i], !state[i]);
-            sendToMegapoints();
-            outputState();
+            toggle(i);
         }
     }
+
+    // Handle serial instruction
+    if (Serial.available() > 0) {
+        int j = Serial.parseInt();
+        toggle(j);
+    }
+
+    if (currentMillis - previousMillis >= interval) {
+        previousMillis = currentMillis;
+
+        outputState();
+    }
+}
+
+void toggle(int which) {
+    state[which] = !state[which];
+    digitalWrite(led[which], !state[which]);
+    digitalWrite(led[which] + 1, state[which]);
+    sendToMegapoints();
+    outputState();
 }
 
 void sendToMegapoints() {
@@ -88,57 +111,47 @@ void sendToMegapoints() {
     // 8-7-6-5-4-3-2-1
     // X-X-X-X-9-10-11-12
     bool bitArrayOne[] = {
-      state[7],
-      state[6],
-      state[5],
-      state[4],
-      state[3],
-      state[2],
-      state[1],
-      state[0],
+        state[7],
+        state[6],
+        state[5],
+        state[4],
+        state[3],
+        state[2],
+        state[1],
+        state[0],
     };
-    
+
     bool bitArrayTwo[] = {
-      0,
-      0,
-      0,
-      0,
-      state[8],
-      state[9],
-      state[10],
-      state[11],
+        0,
+        0,
+        0,
+        0,
+        state[8],
+        state[9],
+        state[10],
+        state[11],
     };
-    
-    int byteOne = bitArrayToInt32(bitArrayOne);
-    int byteTwo = bitArrayToInt32(bitArrayTwo);
-    
-    // Debugging
-    Serial.print("Megapoints: ");
-    Serial.print(byteOne);
-    Serial.print(",");
-    Serial.println(byteTwo);
-    // End debugging
-    
+
     Wire.beginTransmission(servoControllerAddress);
-    Wire.write(byteOne);
-    Wire.write(byteTwo);
+    Wire.write(bitArrayToInt(bitArrayOne));
+    Wire.write(bitArrayToInt(bitArrayTwo));
     Wire.endTransmission();
 }
 
 void outputState() {
     // Outputs a JSON-compatible array of the current state
-    Serial.print('{');
+    Serial.print('[');
     for (int i = 0; i < channels; i++) {
         Serial.print(state[i]);
         if (i != channels - 1) {
             Serial.print(',');
         }
     }
-    Serial.println('}');    
+    Serial.println(']');
 }
 
-int bitArrayToInt32(bool arr[]) {
-    int ret = 0;
+int bitArrayToInt(bool arr[]) {
+    byte ret = 0;
     int tmp;
     for (int i = 0; i < 8; i++) {
         tmp = arr[i];
