@@ -5,6 +5,11 @@
             font-size: 20;
             font-family: BritishRailLightNormal;
         }
+        .track_label {
+            fill: black;
+            font-size: 13px;
+            font-family: BritishRailLightNormal;
+        }
         .route_button {
             stroke: black;
             stroke-width: 1mm;
