@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="148mm">
+<svg xmlns="http://www.w3.org/2000/svg" width="235mm" height="166mm">
     <style>
         .route_label {
             fill: black;
@@ -20,14 +20,24 @@
             stroke-width: 1mm;
             fill: #3BB9FF;
         }
+        .bd {
+            stroke-width: 0;
+            fill: #000;
+        }
         line {
             stroke-width: 3mm;
             stroke: black;
             stroke-linecap: round;
         }
+        #bg {
+            fill: #FFF;
+            stroke-width: .5mm;
+            stroke: black;
+        }
     </style>
 
-    <rect width="210mm" height="148mm" fill="#eee" id="bg"/>
+    <rect width="235mm" height="166mm" id="bg"/>
+    <!--<rect width="203mm" height="132mm" fill="#aaa" x="17mm" y="17mm" id="usable_bg"/>-->
 
     <!--br logo-->
     <path fill="#de433e" d="M87.53 12v47.94H10.82V12h76.71z" id="logo_bg"/>
@@ -37,70 +47,94 @@
     <text fill="black" x="25mm" y="13mm" font-size="38" font-family="BritishRailDarkNormal">Demsby</text>
 
     <!--tracks-->
-    <line id="branch" x1="5mm" y1="40mm" x2="110mm" y2="40mm"/>
-    <line id="p1" x1="140mm" y1="20mm" x2="170mm" y2="20mm"/>
-    <line id="p2" x1="140mm" y1="40mm" x2="170mm" y2="40mm"/>
-    <line id="up" x1="5mm" y1="60mm" x2="205mm" y2="60mm"/>
-    <line id="down" x1="5mm" y1="80mm" x2="205mm" y2="80mm"/>
-    <line id="p3" x1="140mm" y1="100mm" x2="170mm" y2="100mm"/>
+    <line id="branch" x1="5mm" y1="45mm" x2="120mm" y2="45mm"/>
+    <line id="p1" x1="150mm" y1="25mm" x2="170mm" y2="25mm"/>
+    <line id="p2" x1="150mm" y1="45mm" x2="170mm" y2="45mm"/>
+    <line id="up" x1="5mm" y1="65mm" x2="230mm" y2="65mm"/>
+    <line id="down" x1="5mm" y1="85mm" x2="230mm" y2="85mm"/>
+    <line id="p3" x1="150mm" y1="105mm" x2="170mm" y2="105mm"/>
 
-    <line id="branch_to_p1" x1="110mm" y1="40mm" x2="140mm" y2="20mm"/>
+    <line id="branch_to_p1" x1="120mm" y1="45mm" x2="150mm" y2="25mm"/>
 
-    <line id="up_to_p2" x1="110mm" y1="60mm" x2="140mm" y2="40mm"/>
-    <line id="p2_to_up" x1="170mm" y1="40mm" x2="200mm" y2="60mm"/>
+    <line id="up_to_p2" x1="120mm" y1="65mm" x2="150mm" y2="45mm"/>
+    <line id="p2_to_up" x1="170mm" y1="45mm" x2="200mm" y2="65mm"/>
 
-    <line id="down_to_p3" x1="110mm" y1="80mm" x2="140mm" y2="100mm"/>
-    <line id="p3_to_down" x1="170mm" y1="100mm" x2="200mm" y2="80mm"/>
+    <line id="down_to_p3" x1="120mm" y1="85mm" x2="150mm" y2="105mm"/>
+    <line id="p3_to_down" x1="170mm" y1="105mm" x2="200mm" y2="85mm"/>
 
-    <line id="crossover" x1="15mm" y1="80mm" x2="45mm" y2="60mm"/>
+    <line id="crossover" x1="30mm" y1="85mm" x2="60mm" y2="65mm"/>
 
-    <line id="branch_to_up" x1="75mm" y1="40mm" x2="105mm" y2="60mm"/>
-    <line id="up_to_branch" x1="75mm" y1="60mm" x2="105mm" y2="40mm"/>
+    <line id="branch_to_up" x1="85mm" y1="45mm" x2="115mm" y2="65mm"/>
+    <line id="up_to_branch" x1="85mm" y1="65mm" x2="115mm" y2="45mm"/>
+
+    <!--point switches-->
+    <circle cx="120mm" cy="85mm" r="3mm" class="point_switch"/>
+    <circle cx="200mm" cy="85mm" r="3mm" class="point_switch"/>
     
-    <circle cx="110mm" cy="80mm" r="3mm" class="point_switch"/>
-    <circle cx="200mm" cy="80mm" r="3mm" class="point_switch"/>
+    <circle cx="120mm" cy="65mm" r="3mm" class="point_switch"/>
+    <circle cx="200mm" cy="65mm" r="3mm" class="point_switch"/>
     
-    <circle cx="110mm" cy="60mm" r="3mm" class="point_switch"/>
-    <circle cx="200mm" cy="60mm" r="3mm" class="point_switch"/>
+    <circle cx="85mm" cy="55mm" r="3mm" class="point_switch"/>
+
+    <circle cx="25mm" cy="75mm" r="3mm" class="point_switch"/>
     
-    <circle cx="75mm" cy="50mm" r="3mm" class="point_switch"/>
-    <circle cx="15mm" cy="70mm" r="3mm" class="point_switch"/>
+    <!--LEDs-->
+    <circle cx="135mm" cy="85mm" r="1.5mm" class="led"/>
+    <circle cx="135mm" cy="95mm" r="1.5mm" class="led"/>
     
-    <circle cx="125mm" cy="80mm" r="1.5mm" class="led"/>
-    <circle cx="125mm" cy="90mm" r="1.5mm" class="led"/>
+    <circle cx="135mm" cy="55mm" r="1.5mm" class="led"/>
+    <circle cx="135mm" cy="65mm" r="1.5mm" class="led"/>
     
-    <circle cx="185mm" cy="80mm" r="1.5mm" class="led"/>
-    <circle cx="185mm" cy="90mm" r="1.5mm" class="led"/>
+    <circle cx="45mm" cy="65mm" r="1.5mm" class="led"/>
+    <circle cx="45mm" cy="75mm" r="1.5mm" class="led"/>
+    <circle cx="45mm" cy="85mm" r="1.5mm" class="led"/>
     
-    <circle cx="125mm" cy="50mm" r="1.5mm" class="led"/>
-    <circle cx="125mm" cy="60mm" r="1.5mm" class="led"/>
-    
-    <circle cx="185mm" cy="50mm" r="1.5mm" class="led"/>
-    <circle cx="185mm" cy="60mm" r="1.5mm" class="led"/>
-    
-    <circle cx="30mm" cy="60mm" r="1.5mm" class="led"/>
-    <circle cx="30mm" cy="70mm" r="1.5mm" class="led"/>
-    <circle cx="30mm" cy="80mm" r="1.5mm" class="led"/>
-    
-    <circle cx="90mm" cy="40mm" r="1.5mm" class="led"/>
-    <circle cx="90mm" cy="50mm" r="1.5mm" class="led"/>
-    <circle cx="90mm" cy="60mm" r="1.5mm" class="led"/>
+    <circle cx="100mm" cy="45mm" r="1.5mm" class="led"/>
+    <circle cx="100mm" cy="55mm" r="1.5mm" class="led"/>
+    <circle cx="100mm" cy="65mm" r="1.5mm" class="led"/>
+
+    <circle cx="185mm" cy="55mm" r="1.5mm" class="led"/>
+    <circle cx="185mm" cy="65mm" r="1.5mm" class="led"/>
+
+    <circle cx="185mm" cy="85mm" r="1.5mm" class="led"/>
+    <circle cx="185mm" cy="95mm" r="1.5mm" class="led"/>
+
+    <!--bd-->
+    <circle cx="20mm" cy="65mm" r="1.5mm" class="led bd"/>
+    <circle cx="20mm" cy="85mm" r="1.5mm" class="led bd"/>
+    <circle cx="72mm" cy="45mm" r="1.5mm" class="led bd"/>
+    <circle cx="72mm" cy="65mm" r="1.5mm" class="led bd"/>
+    <circle cx="72mm" cy="85mm" r="1.5mm" class="led bd"/>
+    <circle cx="160mm" cy="25mm" r="1.5mm" class="led bd"/>
+    <circle cx="160mm" cy="45mm" r="1.5mm" class="led bd"/>
+    <circle cx="160mm" cy="65mm" r="1.5mm" class="led bd"/>
+    <circle cx="160mm" cy="85mm" r="1.5mm" class="led bd"/>
+    <circle cx="160mm" cy="105mm" r="1.5mm" class="led bd"/>
+    <circle cx="217mm" cy="65mm" r="1.5mm" class="led bd"/>
+    <circle cx="217mm" cy="85mm" r="1.5mm" class="led bd"/>
 
     <!--route buttons-->
-    <circle cx="15mm" cy="125mm" r="3mm" class="route_button"/>
-    <text x="23mm" y="126mm" class="route_label">Route One</text>
-    <circle cx="65mm" cy="125mm" r="3mm" class="route_button"/>
-    <text x="73mm" y="126mm" class="route_label">Route Two</text>
-    <circle cx="115mm" cy="125mm" r="3mm" class="route_button"/>
-    <text x="123mm" y="126mm" class="route_label">Route Three</text>
-    <circle cx="165mm" cy="125mm" r="3mm" class="route_button"/>
-    <text x="173mm" y="126mm" class="route_label">Route Four</text>
-    <circle cx="15mm" cy="137mm" r="3mm" class="route_button"/>
-    <text x="23mm" y="138mm" class="route_label">Route Five</text>
-    <circle cx="65mm" cy="137mm" r="3mm" class="route_button"/>
-    <text x="73mm" y="138mm" class="route_label">Route Six</text>
-    <circle cx="115mm" cy="137mm" r="3mm" class="route_button"/>
-    <text x="123mm" y="138mm" class="route_label">Route Seven</text>
-    <circle cx="165mm" cy="137mm" r="3mm" class="route_button"/>
-    <text x="173mm" y="138mm" class="route_label">Route Eight</text>
+    <circle cx="25mm" cy="128mm" r="3mm" class="route_button"/>
+    <text x="31mm" y="129mm" class="route_label">Route One</text>
+
+    <circle cx="75mm" cy="128mm" r="3mm" class="route_button"/>
+    <text x="81mm" y="129mm" class="route_label">Route Two</text>
+
+    <circle cx="125mm" cy="128mm" r="3mm" class="route_button"/>
+    <text x="131mm" y="129mm" class="route_label">Route Three</text>
+
+    <circle cx="175mm" cy="128mm" r="3mm" class="route_button"/>
+    <text x="181mm" y="129mm" class="route_label">Route Four</text>
+
+    <circle cx="25mm" cy="142mm" r="3mm" class="route_button"/>
+    <text x="31mm" y="143mm" class="route_label">Route Five</text>
+
+    <circle cx="75mm" cy="142mm" r="3mm" class="route_button"/>
+    <text x="81mm" y="143mm" class="route_label">Route Six</text>
+
+    <circle cx="125mm" cy="142mm" r="3mm" class="route_button"/>
+    <text x="131mm" y="143mm" class="route_label">Route Seven</text>
+
+    <circle cx="175mm" cy="142mm" r="3mm" class="route_button"/>
+    <text x="181mm" y="143mm" class="route_label">Route Eight</text>
 </svg>
