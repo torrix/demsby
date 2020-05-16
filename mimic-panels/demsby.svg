@@ -48,11 +48,26 @@
 
     <!--tracks-->
     <line id="branch" x1="5mm" y1="45mm" x2="120mm" y2="45mm"/>
+    <text x="5mm" y="42mm" class="track_label">BRANCH</text>
+
     <line id="p1" x1="150mm" y1="25mm" x2="170mm" y2="25mm"/>
+    <text x="150mm" y="22mm" class="track_label">PLATFORM 1</text>
+
     <line id="p2" x1="150mm" y1="45mm" x2="170mm" y2="45mm"/>
+    <text x="150mm" y="42mm" class="track_label">PLATFORM 2</text>
+
     <line id="up" x1="5mm" y1="65mm" x2="230mm" y2="65mm"/>
+    <text x="5mm" y="62mm" class="track_label">UP</text>
+    <text x="226mm" y="62mm" class="track_label">UP</text>
+    <text x="152.5mm" y="62mm" class="track_label">UP LOOP</text>
+
     <line id="down" x1="5mm" y1="85mm" x2="230mm" y2="85mm"/>
+    <text x="5mm" y="82mm" class="track_label">DOWN</text>
+    <text x="220mm" y="82mm" class="track_label">DOWN</text>
+    <text x="150mm" y="82mm" class="track_label">DOWN LOOP</text>
+
     <line id="p3" x1="150mm" y1="105mm" x2="170mm" y2="105mm"/>
+    <text x="150mm" y="102mm" class="track_label">PLATFORM 3</text>
 
     <line id="branch_to_p1" x1="120mm" y1="45mm" x2="150mm" y2="25mm"/>
 
@@ -68,15 +83,15 @@
     <line id="up_to_branch" x1="85mm" y1="65mm" x2="115mm" y2="45mm"/>
 
     <!--point switches-->
+    <circle cx="25mm" cy="75mm" r="3mm" class="point_switch"/>
+
+    <circle cx="85mm" cy="55mm" r="3mm" class="point_switch"/>
+
     <circle cx="120mm" cy="85mm" r="3mm" class="point_switch"/>
     <circle cx="200mm" cy="85mm" r="3mm" class="point_switch"/>
     
     <circle cx="120mm" cy="65mm" r="3mm" class="point_switch"/>
     <circle cx="200mm" cy="65mm" r="3mm" class="point_switch"/>
-    
-    <circle cx="85mm" cy="55mm" r="3mm" class="point_switch"/>
-
-    <circle cx="25mm" cy="75mm" r="3mm" class="point_switch"/>
     
     <!--LEDs-->
     <circle cx="135mm" cy="85mm" r="1.5mm" class="led"/>
