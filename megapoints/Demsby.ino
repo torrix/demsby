@@ -4,38 +4,49 @@
 
 const long interval = 1000;
 const int channels = 12;
+const int routes = 8;
 const int bounceLength = 100;
 const byte servoControllerAddress = 2;
 
+const int routeButtons[] = {
+    A1,
+    A2,
+    A3,
+    A4,
+    A5,
+    A6,
+    A7,
+    A8
+};
+
 const int button[] = {
-    2, // 0
-    3, // 1
-    4, // 2
-    5, // 3
-    6, // 4
-    7, // 5
-    8, // 6
-    9, // 7
-    10, // 8
-    11, // 9
-    12, // 10
-    13 // 11
+    2, // 1
+    3, // 2
+    4, // 3
+    5, // 4
+    6, // 5
+    7, // 6
+    8, // 7
+    9, // 8
+    10, // 9
+    11, // 10
+    12, // 11
+    13 // 12
 };
 
 const int led[] = {
-    22, // 0
-//    24, // 1
-    26, // 2
-    28, // 3
-    30, // 4
-    32, // 5
-    34, // 6
-    36, // 7
-    38, // 8
-    40, // 9
-    42, // 10
-    44, // 11
-    46 // 11
+    22, // 1
+    24, // 2
+    26, // 3
+    28, // 4
+    30, // 5
+    32, // 6
+    34, // 7
+    36, // 8
+    38, // 9
+    40, // 10
+    42, // 11
+    44, // 12
 };
 
 bool state[] = {
@@ -54,6 +65,7 @@ bool state[] = {
 };
 
 Bounce bounce[channels];
+Bounce routeBounce[routes];
 
 unsigned long previousMillis = 0;
 
@@ -64,6 +76,15 @@ void setup() {
     sendToMegapoints();
     outputState();
 
+    pinMode(A1, INPUT_PULLUP);
+    pinMode(A2, INPUT_PULLUP);
+    pinMode(A3, INPUT_PULLUP);
+    pinMode(A4, INPUT_PULLUP);
+    pinMode(A5, INPUT_PULLUP);
+    pinMode(A6, INPUT_PULLUP);
+    pinMode(A7, INPUT_PULLUP);
+    pinMode(A8, INPUT_PULLUP);
+
     for (int i = 0; i < channels; i++) {
         bounce[i] = Bounce(button[i], bounceLength);
         pinMode(button[i], INPUT_PULLUP);
@@ -71,6 +92,10 @@ void setup() {
         pinMode(led[i] + 1, OUTPUT);
         digitalWrite(led[i], !state[i]);
         digitalWrite(led[i] + 1, state[i]);
+    }
+    for (int i = 0; i < routes; i++) {
+        routeBounce[i] = Bounce(routeButtons[i], bounceLength);
+        pinMode(routeButtons[i], INPUT_PULLUP);
     }
 }
 
@@ -81,6 +106,12 @@ void loop() {
     for (int i = 0; i < channels; i++) {
         bounce[i].update();
         if (bounce[i].fell()) {
+            toggle(i);
+        }
+    }
+    for (int i = 0; i < routes; i++) {
+        routeBounce[i].update();
+        if (routeBounce[i].fell()) {
             toggle(i);
         }
     }
